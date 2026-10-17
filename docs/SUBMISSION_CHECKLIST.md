@@ -7,7 +7,7 @@ Status as of 2026-10-17 ~17:10 SGT. [x] = done and verified, [ ] = team action n
 ## Build and evidence
 
 - [x] Full pipeline executed on LinuxONE (s390x): train → evaluate → validate-physics → benchmark-planner → benchmark-runtime (`artifacts/linuxone/pipeline/status.log`).
-- [x] 26/26 tests pass on both macOS arm64 and LinuxONE s390x.
+- [x] 26/26 tests pass on both macOS arm64 and LinuxONE s390x (original pipeline). After the accuracy-review commit, 63/63 pass locally on the merged `main` (2026-10-17).
 - [x] OrbitGuard systemd service is active on the VM, bound to 127.0.0.1:8000, enabled at boot.
 - [x] Live browser smoke test passes through the SSH tunnel, including a real screening job and evidence rendering (`frontend/test-results/live-*.png`).
 - [x] `docs/RESULTS.md` is generated from LinuxONE artifacts.
@@ -15,8 +15,8 @@ Status as of 2026-10-17 ~17:10 SGT. [x] = done and verified, [ ] = team action n
 ## Required by the guidebook (team)
 
 - [x] Complete both prerequisite labs: the churn (Lab 1) and loan-approval (Lab 2) notebooks from https://github.com/linuxone-community-cloud/jupyter-lab-ml ran on LinuxONE on 2026-10-17. Executed notebooks and screenshots are in `docs/labs/`. Confirm on Discord that these are the two labs meant by the guidebook.
-- [ ] Create the GitHub repository (public, or private with judge access) and push. Before pushing, run `git status` and confirm that `key.pem`, `artifacts/` and `.venv/` are **not** staged (`.gitignore` covers them).
-- [ ] Record the ≤ 3-minute video following `docs/DEMO_SCRIPT.md`. Check the duration before uploading.
+- [x] GitHub repository: https://github.com/aryashmullick/ibmdatathon (public). Before every push, run `git status` and confirm that `key.pem`, `artifacts/` and `.venv/` are **not** staged (`.gitignore` covers them).
+- [ ] Pick and upload the ≤ 3-minute video. Two candidates exist on different machines: the narrated `video/out/OrbitGuard_demo.mp4` (175 s, earlier UI) and the no-speech `video/out/Datathon2_OrbitGuard.mp4` (170 s, shows the accuracy-review features). Check the duration before uploading.
 - [ ] Capture LinuxONE evidence screenshots:
   - a terminal showing `uname -m` → `s390x`
   - `systemctl status orbitguard`
