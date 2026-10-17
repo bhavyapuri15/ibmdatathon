@@ -14,7 +14,7 @@ Status as of 2026-10-17 ~17:10 SGT. [x] = done and verified, [ ] = team action n
 
 ## Required by the guidebook (team)
 
-- [ ] Complete both prerequisite labs: the notebooks in https://github.com/linuxone-community-cloud/jupyter-lab-ml. Lab 2 is `Loan_Approval_Demo.ipynb`; Lab 1 is probably `Churn_Scikit_PyTorch.ipynb` (confirm on Discord, or run all four notebooks).
+- [x] Complete both prerequisite labs: the churn (Lab 1) and loan-approval (Lab 2) notebooks from https://github.com/linuxone-community-cloud/jupyter-lab-ml ran on LinuxONE on 2026-10-17. Executed notebooks and screenshots are in `docs/labs/`. Confirm on Discord that these are the two labs meant by the guidebook.
 - [ ] Create the GitHub repository (public, or private with judge access) and push. Before pushing, run `git status` and confirm that `key.pem`, `artifacts/` and `.venv/` are **not** staged (`.gitignore` covers them).
 - [ ] Record the ≤ 3-minute video following `docs/DEMO_SCRIPT.md`. Check the duration before uploading.
 - [ ] Capture LinuxONE evidence screenshots:
